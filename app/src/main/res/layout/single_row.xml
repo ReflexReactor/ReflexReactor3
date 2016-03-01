@@ -17,10 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:layout_below="@+id/uname_srow"
+        android:layout_below="@id/uname_srow"
         android:id="@+id/status_srow"
         android:text="status"
-        android:textColor="#30fcf2" />
+        android:textColor="#d32f2f"
+         />
 
 
 </RelativeLayout>

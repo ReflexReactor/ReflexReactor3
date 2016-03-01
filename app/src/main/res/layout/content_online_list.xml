@@ -9,31 +9,45 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.shweta.gcmsampleapp.OnlineListActivity"
-    tools:showIn="@layout/activity_online_list"
+    tools:context="rr.reflexreactor.OnlineListActivity"
     android:background="#060606">
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Available"
+        android:textSize="25dp"
+        android:id="@+id/online_title_btn"
+        style="@style/button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        >
+    </Button>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/list_online"
-
+        android:layout_below="@id/online_title_btn"
         >
 
     </ListView>
 
     <Button
-        android:layout_height="wrap_content"
+
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="challenge_action"
         android:text="Challenge"
+        android:textSize="25dp"
         android:id="@+id/challenge_btn"
-        android:background="@color/colorPrimaryDark"
+        style="@style/button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_alignParentBottom="true"
         >
     </Button>
-
 
 </RelativeLayout>

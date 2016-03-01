@@ -1,127 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.shweta.gcmsampleapp.Register"
-    tools:showIn="@layout/activity_register"
-    android:background="#0c0c0c">
-    <ImageView
-        android:layout_width="252dp"
-        android:layout_height="71dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@mipmap/register"></ImageView>
-
+    android:layout_height="match_parent">
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="35dp"
-        android:weightSum="1">
-
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Name"
-            android:id="@+id/textView"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="#ff1cf080"
-            android:textSize="30sp"
-            android:typeface="monospace" />
-
-        <EditText
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/nameR_et"
-            android:hint="Enter here.."
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="#ff28f0f0"
-            android:textColorHint="#ff28f0f0"
-            android:textSize="20sp"
-            android:typeface="monospace" />
+            android:background="@drawable/register_bg"
+            />
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="10dp"
-        android:weightSum="1">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            android:id="@+id/unameR_tv"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="#ff1cf080"
-            android:textSize="30sp"
-            android:typeface="monospace" />
-
-        <EditText
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/unameR_et"
-            android:inputType="textPassword"
-            android:hint="Enter here.."
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="#ff28f0f0"
-            android:textColorHint="#ff28f0f0"
-            android:textSize="20sp"
-            android:typeface="monospace" />
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/unameR_tv"
+                    android:text="Username"
+                    android:gravity="center"
 
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="10dp"
-        android:weightSum="1">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mobile Number"
-            android:id="@+id/phnR_tv"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="#ff1cf080"
-            android:textSize="30sp"
-            android:typeface="monospace" />
-        <EditText
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/unameR_et"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/phnR_et"
-            android:hint="Enter here.."
-            android:paddingLeft="20dp"
-            android:inputType="numberDecimal"
-            android:paddingRight="20dp"
-            android:textColor="#ff28f0f0"
-            android:textColorHint="#ff28f0f0"
-            android:textSize="20sp"
-            android:typeface="monospace" />
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/phnR_tv"
+                    android:text="Mobile Number"
+                    android:gravity="center"
+                    />
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/phnR_et"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Register"
+                android:id="@+id/regR_btn"
+                />
+        </RelativeLayout>
 
     </LinearLayout>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="131dp"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/regR_btn"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#ff1cf080"
-        android:textSize="20sp"
-        android:typeface="monospace"
-        android:textColor="#ff070607" />
+
 </LinearLayout>
